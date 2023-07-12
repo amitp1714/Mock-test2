@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Sign in form</h1>
+    <form>
+        <div>
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+        </div><br>
+        <div>
+            <label for="password"></label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+        </div><br>
+
+        <div class="mail">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+        </div><br>
+
+        <h2>Select your Gender</h2>
+        <div class="radio">
+            <label for="male"></label>
+            <input type="radio" id="male" name="gender">Male<br> <br>
+            <label for="female"></label>
+            <input type="radio" id="female" name="gender">Female<br> <br>
+            <label for="other"></label>
+            <input type="radio" id="other" name="gender">Other<br> <br>
+        </div>
+        <div class="dropdown">
+            <label for="country">Select your Country</label>
+            <select name="country" id="country" required>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bhutan">Bhutan</option>
+            </select> <br> <br>
+        </div>
+        <label for="html"> Course</label> <br>
+        <div class="checkbox">
+            <input type="checkbox" id="html">HTML<br>
+            <label for="css"></label>
+            <input type="checkbox" id="css">CSS<br>
+            <label for="js"></label>
+            <input type="checkbox" id="js">JavaScript<br>
+        </div>
+       
+        <div class="textarea">
+            <label for="comments">Write About Yourself</label><br> <br>
+            <input type="textarea" name="" id="comments" cols="10" rows="5" placeholder="Type here" required><br><br>
+        </div>
+        <div class="btn"><input type="submit" value="Sign in">
+        </div>
+
+    </form>
+</body>
+
+</html>

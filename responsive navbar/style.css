@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;1,300&family=El+Messiri&family=Freehand&family=Goldman:wght@700&family=Indie+Flower&display=swap');
+
+body{
+    font-family: 'El Messiri', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.navbar-container{
+    background-color: #383838;
+    color: white;
+}
+.navbar{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 20px;
+}
+.logo{
+    display: block;
+    width: 100px;
+}
+.logo h1{
+    color: rgb(209, 248, 33);
+    font-size: xx-large;
+    font-weight: 500;
+    font-family: 'Freehand', cursive;
+}
+.logo h1:hover{
+    cursor: pointer;
+   
+}
+.navitems{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navitems p{
+    font-size: 20px;
+}
+.navbar a{
+    display: none;
+}
+.navitems p:hover{
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+.navitems button{
+    border: 1px solid rgb(209, 248, 33);
+    color: rgb(209, 248, 33);
+    background-color: transparent;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+.navitems button:hover{
+    cursor: pointer;
+    background-color:rgb(209, 248, 33);
+    color: #383838;
+}
+@media only screen and (max-width: 850px){
+    .navbar a{
+        margin-top: 30px;
+        display: block;
+        font-size: xx-large;
+        color: white;
+    }
+    .navitems {
+        padding: 10px 0;
+        margin-top: 60px;
+       display: none;
+       flex-direction: column;
+    }
+    .navbar{
+        align-items: flex-start;
+        text-align: center;
+        
+    }
+}
